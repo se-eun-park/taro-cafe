@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: UUUN;
+  src:
+    local('UUUN'),
+    url('./assets/fonts/UUUN.otf') format('otf');
+}

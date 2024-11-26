@@ -27,8 +27,9 @@
       "@/*": ["*"],
       "@components/*": ["components/*"],
       "@routes/*": ["routes/*"],
-      "@pages/*": ["routes/pages/*"]
+      "@pages/*": ["routes/pages/*"],
+      "@assets/*": ["assets/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "custom.d.ts"]
 }
