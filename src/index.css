@@ -6,3 +6,7 @@
   font-family: UUUN;
   src: url('./assets/fonts/UUUN.woff') format('woff');
 }
+
+body {
+  background-color: #000;
+}
