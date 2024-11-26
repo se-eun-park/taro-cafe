@@ -4,7 +4,5 @@
 
 @font-face {
   font-family: UUUN;
-  src:
-    local('UUUN'),
-    url('./assets/fonts/UUUN.otf') format('otf');
+  src: url('./assets/fonts/UUUN.otf') format('otf');
 }
