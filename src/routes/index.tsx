@@ -10,6 +10,7 @@ import Luck from '@pages/Luck'
 import Print from '@pages/Print'
 import Loading from '@pages/Loading'
 import Redirect from '@pages/Redirect'
+import Download from '@pages/Download'
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: 'print',
         element: <Print />,
+      },
+      {
+        path: 'download/:category',
+        element: <Download />,
       },
     ],
   },
