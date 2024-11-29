@@ -9,7 +9,7 @@ export default function Luck() {
 
   const encodedValue = encodeBase64(`luck/${randomValue}`)
 
-  const downloadUrl = `/download/${encodedValue}`
+  const downloadUrl = `https://flip-side-virid.vercel.app/download/${encodedValue}`
 
   return (
     <div className='flex gap-[60px] items-center'>

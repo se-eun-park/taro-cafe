@@ -9,7 +9,7 @@ export default function Health() {
 
   const encodedValue = encodeBase64(`health/${randomValue}`)
 
-  const downloadUrl = `/download/${encodedValue}`
+  const downloadUrl = `https://flip-side-virid.vercel.app/download/${encodedValue}`
 
   return (
     <div className='flex gap-[60px] items-center'>
