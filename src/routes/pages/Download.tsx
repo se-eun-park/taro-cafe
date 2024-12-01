@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom'
+import { DownloadButton } from '@/components/DownloadButton'
 import { decodeBase64 } from '@/hooks/useAes'
 import {
   MoneyContentsMap,
@@ -33,8 +34,9 @@ export default function Download() {
   }, [decodedValue, contentIndex])
 
   return (
-    <div className='text-white'>
+    <div className='flex flex-col items-center gap-20 text-white'>
       <contentElements.component className='w-[300px] h-[300px]' />
+      <DownloadButton imgUrl='/resultSample.png' fileName={`${decodedValue}`} />
     </div>
   )
 }
