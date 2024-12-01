@@ -54,7 +54,7 @@ const router = createBrowserRouter([
         element: <Luck />,
       },
       {
-        path: 'print',
+        path: 'print/:category',
         element: <Print />,
       },
       {
