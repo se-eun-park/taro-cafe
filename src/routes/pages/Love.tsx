@@ -1,6 +1,6 @@
 import { encodeBase64 } from '@/hooks/useAes'
 import { LoveContentsMap } from '@/constants/LoveContentsMap'
-import { HomeButton } from '@assets/svg'
+import { PrintButton } from '@assets/svg'
 
 export default function Love() {
   const randomValue = Math.floor(Math.random() * LoveContentsMap.length)
@@ -16,8 +16,8 @@ export default function Love() {
           <h1 className='text-[28px]'>{LoveContent.title}</h1>
           <p className='text-xl'>{LoveContent.description}</p>
         </div>
-        <HomeButton
-          className='w-[450px] h-[72px]'
+        <PrintButton
+          className='w-[465px] h-[72.5px]'
           text='PRINT'
           textSize='md'
           navigate={`/print/${encodedValue}`}

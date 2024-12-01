@@ -1,6 +1,6 @@
 import { encodeBase64 } from '@/hooks/useAes'
 import { LuckContentsMap } from '@/constants/LuckContentsMap'
-import { HomeButton } from '@assets/svg'
+import { PrintButton } from '@assets/svg'
 
 export default function Luck() {
   const randomValue = Math.floor(Math.random() * LuckContentsMap.length)
@@ -16,8 +16,8 @@ export default function Luck() {
           <h1 className='text-[28px]'>{LuckContent.title}</h1>
           <p className='text-xl'>{LuckContent.description}</p>
         </div>
-        <HomeButton
-          className='w-[450px] h-[72px]'
+        <PrintButton
+          className='w-[465px] h-[72.5px]'
           text='PRINT'
           textSize='md'
           navigate={`/print/${encodedValue}`}

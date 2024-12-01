@@ -1,6 +1,6 @@
 import { encodeBase64 } from '@/hooks/useAes'
 import { CareerContentsMap } from '@/constants/CareerContentsMap'
-import { HomeButton } from '@assets/svg'
+import { PrintButton } from '@assets/svg'
 
 export default function Career() {
   const randomValue = Math.floor(Math.random() * CareerContentsMap.length)
@@ -16,8 +16,8 @@ export default function Career() {
           <h1 className='text-[28px]'>{CareerContent.title}</h1>
           <p className='text-xl'>{CareerContent.description}</p>
         </div>
-        <HomeButton
-          className='w-[450px] h-[72px]'
+        <PrintButton
+          className='w-[465px] h-[72.5px]'
           text='PRINT'
           textSize='md'
           navigate={`/print/${encodedValue}`}

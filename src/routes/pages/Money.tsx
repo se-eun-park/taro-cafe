@@ -1,6 +1,6 @@
 import { encodeBase64 } from '@/hooks/useAes'
 import { MoneyContentsMap } from '@/constants/MoneyContentsMap'
-import { HomeButton } from '@assets/svg'
+import { PrintButton } from '@assets/svg'
 
 export default function Money() {
   const randomValue = Math.floor(Math.random() * MoneyContentsMap.length)
@@ -16,8 +16,8 @@ export default function Money() {
           <h1 className='text-[28px]'>{MoneyContent.title}</h1>
           <p className='text-xl'>{MoneyContent.description}</p>
         </div>
-        <HomeButton
-          className='w-[450px] h-[72px]'
+        <PrintButton
+          className='w-[465px] h-[72.5px]'
           text='PRINT'
           textSize='md'
           navigate={`/print/${encodedValue}`}

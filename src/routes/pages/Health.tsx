@@ -1,6 +1,6 @@
 import { encodeBase64 } from '@/hooks/useAes'
 import { HealthContentsMap } from '@/constants/HealthContentsMap'
-import { HomeButton } from '@assets/svg'
+import { PrintButton } from '@assets/svg'
 
 export default function Health() {
   const randomValue = Math.floor(Math.random() * HealthContentsMap.length)
@@ -16,8 +16,8 @@ export default function Health() {
           <h1 className='text-[28px]'>{HealthContent.title}</h1>
           <p className='text-xl'>{HealthContent.description}</p>
         </div>
-        <HomeButton
-          className='w-[450px] h-[72px]'
+        <PrintButton
+          className='w-[465px] h-[72.5px]'
           text='PRINT'
           textSize='md'
           navigate={`/print/${encodedValue}`}
