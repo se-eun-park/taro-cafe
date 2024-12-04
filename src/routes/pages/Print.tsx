@@ -10,7 +10,7 @@ export default function Print() {
 
   const downloadUrl = `https://flip-side-virid.vercel.app/download/${encodedValue}`
 
-  const [count, setCount] = useState(10)
+  const [count, setCount] = useState(20)
 
   useEffect(() => {
     const id = setInterval(() => {

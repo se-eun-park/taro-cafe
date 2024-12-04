@@ -1,3 +1,4 @@
+import { onClickPrintHandler } from '@/utils/printHandler'
 import type { SVGProps } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -9,7 +10,10 @@ interface SvgPrintButtonProps extends SVGProps<SVGSVGElement> {
 
 const SvgPrintButton = ({ text, textSize, navigate, ...props }: SvgPrintButtonProps) => {
   const nav = useNavigate()
-  const onClick = () => nav(navigate)
+  const onClick = async () => {
+    await onClickPrintHandler()
+    nav(navigate)
+  }
   const textSizeClass = textSize === 'lg' ? 'text-[80px]' : 'text-[40px]'
   return (
     <button onClick={onClick}>
